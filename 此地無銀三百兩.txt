@@ -67,8 +67,7 @@ docker-machine create --driver=virtualbox fabric-lab # 替你的虛擬機起個�
 
 docker pull hyperledger/fabric-peer       #實驗日期 2017-1-6 ID:21cb00fb27f4
 docker pull hyperledger/fabric-membersrvc #實驗日期 2017-1-6 ID:b3654d32e4f9
-docker tag hyperledger/fabric-peer hyperledger/fabric-baseimage:latest 
-docker pull hyperledger/fabric-starter-kit #有證書
+docker tag hyperledger/fabric-peer hyperledger/fabric-baseimage:latest
 
 #官方的 hyperledger/fabric-baseimage:latest 不能用,用 fabric-peer替代 
 #也別嘗試 yeasy 系列我都試過了 全都不行(可能有漏掉)
@@ -221,7 +220,7 @@ peer chaincode query -n ${chaincode_name} -c '{"Function": "query", "Args": ["a"
 #/////////////////////pbft///////////////////////
 #pbft模式
 
-#多節點最少4節點 難度：[sorry * is overflow buffer XD]
+#多節點最少4節點 難度：[sorry  ☆  is overflow buffer XD]
 
 #ROOT 節點
 docker run --name=vp0 \
