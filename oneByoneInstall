@@ -35,6 +35,16 @@ sudo /etc/init.d/network restart 记得重新启动一个网络服务
 网络设置是否有效, 用ping命令确定
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+//////////////////////  ubuntu14.04 hyperledger fabric项目    预装软件  /////////////////////////////
+Git client
+Go - 1.7 or later (for releases before v1.0, 1.6 or later)
+Docker - 1.12 or later
+Pip
+//////////////////////////////////////////////////////////////
+
+
+
 官方资料链接 Setting up the development environment
 http://hyperledger-fabric.readthedocs.io/en/latest/dev-setup/devenv/
 
