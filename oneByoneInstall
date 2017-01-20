@@ -1,6 +1,8 @@
 ////////////////////////////////////////////////////////////  apt-get mirror 设置 /////////////////////////////////////
 安装软件之前先把网络设置好
-Ubuntu 14.04 的 apt-get 設定 s/etc/apt/sources.list
+Ubuntu 14.04 的 apt-get 設定 
+
+#> sudo nano /etc/apt/sources.list
 aliyun的mirror国内最快,更新也最快   
 deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
 deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
@@ -13,6 +15,12 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted univers
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
 
+#> sudo nano /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+
+sudo /etc/init.d/networking restart
 sudo /etc/init.d/network restart 记得重新启动一个网络服务
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
