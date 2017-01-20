@@ -15,9 +15,15 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted univers
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
 deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
 
+
+
 #> sudo nano /etc/resolv.conf
 nameserver 8.8.8.8
 nameserver 8.8.4.4
+
+一样的效果
+/etc/resolvconf/resolv.conf.d/base
+sudo resolvconf -u
 
 
 sudo /etc/init.d/networking restart
