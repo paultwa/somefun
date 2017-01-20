@@ -28,11 +28,14 @@ sudo resolvconf -u
 
 sudo /etc/init.d/networking restart
 sudo /etc/init.d/network restart 记得重新启动一个网络服务
+
+网络设置是否有效, 用ping命令确定
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 官方资料链接 Setting up the development environment
 http://hyperledger-fabric.readthedocs.io/en/latest/dev-setup/devenv/
-http://www.itdadao.com/articles/c15a818635p0.html
+
 
 发烧友链接
 https://github.com/Lursun/somefun?files=1
+http://www.itdadao.com/articles/c15a818635p0.html
